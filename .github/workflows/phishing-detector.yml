@@ -1,9 +1,9 @@
 name: GitHub Phishing Detector
 
 on:
+  workflow_dispatch:  # Allow manual execution
   schedule:
     - cron: '*/5 * * * *'  # Run every 5 minutes
-  workflow_dispatch:  # Allow manual execution
 
 jobs:
   scan-phishing:
